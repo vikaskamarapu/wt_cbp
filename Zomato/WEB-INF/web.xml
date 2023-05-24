@@ -1,0 +1,73 @@
+<web-app>
+	<servlet>
+	<servlet-name>Authenticate1</servlet-name>
+     <servlet-class>Authenticate1</servlet-class>
+	</servlet>
+ 	<servlet-mapping>
+	<servlet-name>Authenticate1</servlet-name>
+	<url-pattern>/Authenticate1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	<servlet-name>Authenticate2</servlet-name>
+     <servlet-class>Authenticate2</servlet-class>
+	</servlet>
+ 	<servlet-mapping>
+	<servlet-name>Authenticate2</servlet-name>
+	<url-pattern>/Authenticate2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	<servlet-name>Authenticate3</servlet-name>
+     <servlet-class>Authenticate3</servlet-class>
+	</servlet>
+ 	<servlet-mapping>
+	<servlet-name>Authenticate3</servlet-name>
+	<url-pattern>/Authenticate3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	<servlet-name>Authenticate4</servlet-name>
+     <servlet-class>Authenticate4</servlet-class>
+	</servlet>
+ 	<servlet-mapping>
+	<servlet-name>Authenticate4</servlet-name>
+	<url-pattern>/Authenticate4</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>register1</servlet-name>
+		<servlet-class>register1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register1</servlet-name>
+		<url-pattern>/register1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register2</servlet-name>
+		<servlet-class>register2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register2</servlet-name>
+		<url-pattern>/register2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register3</servlet-name>
+		<servlet-class>register3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register3</servlet-name>
+		<url-pattern>/register3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register4</servlet-name>
+		<servlet-class>register4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register4</servlet-name>
+		<url-pattern>/register4</url-pattern>
+	</servlet-mapping>
+</web-app>

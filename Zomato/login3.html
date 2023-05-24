@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      button {
+        margin: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      body {
+        text-align: center;
+        margin-top: 20px;
+        background-color:antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="logform"
+      action="http://localhost:8080/TEAM-11Myapp/Authenticate3"
+      method="post"
+    >
+      <h1>LOGIN</h1>
+      <label for="username">Login ID:</label>
+      <input type="text" name="username" id="username" /><br /><br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" /><br />
+      <button type="submit">Login</button>
+      <button><a href="register3.html" target="body">Register</a></button>
+    </form>
+  </body>
+</html>

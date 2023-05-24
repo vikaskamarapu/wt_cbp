@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  table{
+        background-image:url("https://t3.ftcdn.net/jpg/01/09/28/48/360_F_109284813_ygrDS98PXPinBd9gq9xcHjkd0fnhw7Sl.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 50%;
+        width: 50%;
+  }
+table,td{
+	border: 1px solid black;
+	border-collapse:collapse;
+	padding: 15px;
+}
+body{
+  background-color:antiquewhite;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Breakfast </h1>
+<table align="center">
+      <tr>
+        <th>Image</th>
+        <th>Item Name</th>
+        <th>Price</th>
+        <th>Add to Cart</th>
+    </tr>
+ <tr>
+  <td><img src="https://th.bing.com/th/id/OIP.ia3E9RgSk5nV00Gy7woiPQHaFN?pid=ImgDet&rs=1" width="100" height="100"></td>
+    <td>Idli</td>    
+    <td>$10</td>
+    <td><button type="submit"  onclick="addToCart('9')">
+        <img src="https://t3.ftcdn.net/jpg/00/26/12/44/360_F_26124443_QQVqQWwQGQFqBQg9QACdpktxYQ7xIRkY.jpg" alt="buttonpng"  width="100" height="48" />
+
+</td>
+  </tr>
+
+  <tr>
+    <td><img src="https://pipingpotcurry.com/wp-content/uploads/2020/11/Dosa-recipe-plain-sada-dosa-Piping-Pot-Curry.jpg" width="100" height="100"></td>
+    <td>Dosa</td>    
+    <td>$15</td>
+<td><button type="submit"  onclick="addToCart('10')">
+        <img src="https://t3.ftcdn.net/jpg/00/26/12/44/360_F_26124443_QQVqQWwQGQFqBQg9QACdpktxYQ7xIRkY.jpg" alt="buttonpng"  width="100" height="48" />
+
+</td>
+  </tr>
+
+
+<tr>
+    <td><img src="https://th.bing.com/th/id/OIP.lOQB6tHIu-7INZrKZkq6jwHaEK?pid=ImgDet&rs=1" width="100" height="100"></td>
+    <td>Vada</td>    
+    <td>$20</td>
+    <td><button type="submit"  onclick="addToCart('11')">
+        <img src="https://t3.ftcdn.net/jpg/00/26/12/44/360_F_26124443_QQVqQWwQGQFqBQg9QACdpktxYQ7xIRkY.jpg" alt="buttonpng"  width="100" height="48" />
+
+</td>
+  </tr>
+
+
+<tr>
+    <td><img src="https://th.bing.com/th/id/OIP.r8okGNmD6b-7-yxl4xi2PwAAAA?pid=ImgDet&w=320&h=320&rs=1" width="100" height="100"></td>
+    <td>Mysore Bonda</td>    
+<td>$18</td>
+    <td><button type="submit"  onclick="addToCart('12')">
+        <img src="https://t3.ftcdn.net/jpg/00/26/12/44/360_F_26124443_QQVqQWwQGQFqBQg9QACdpktxYQ7xIRkY.jpg" alt="buttonpng"  width="100" height="48" />
+
+</td>
+</tr>
+  
+</table>
+<script>
+function addToCart(pid) {
+  alert("Breakfast added!");
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // Handle the server response here
+    }
+  };
+  xhttp.open("POST", "http://localhost:8080/TEAM-11Myapp/addToCart.jsp", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("pid=" + encodeURIComponent(pid));
+}
+</script>
+</body>
+</html>
